@@ -177,7 +177,7 @@ module pipeline(
     wire mem_to_reg = 1'b0;
     wire [3:0] alu_control = 4'b0000;
 
-    // --- INSTANCIAS ---
+    //INSTANCIAS
 
     HazardUnit hazard_unit_inst (
         .rs_used(1'b1), .rt_used(1'b1), 
