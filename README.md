@@ -52,7 +52,7 @@ module HazardUnit (
 endmodule
 ```
 
-### Etapa 1: Instruction Fetch (IF)
+### Instruction Fetch (IF)
 ```verilog
 module IF_stage (
     input clk, reset, stall,
@@ -84,7 +84,7 @@ module IF_stage (
 endmodule
 ```
 
-### Etapa 2: Instruction Decode (ID)
+### Instruction Decode (ID)
 ```verilog
 module ID_stage (
     input clk, reset,
@@ -115,7 +115,7 @@ module ID_stage (
 endmodule
 ```
 
-### Etapa 4: Memory Access (MEM)
+### Memory Access (MEM)
 ```verilog
 module MEM_stage (
     input clk,
@@ -136,7 +136,7 @@ module MEM_stage (
 endmodule
 ```
 
-### Etapa 5: Write Back (WB)
+### Write Back (WB)
 ```verilog
 module WB_stage (
     input [31:0] alu_result,  
@@ -150,7 +150,7 @@ module WB_stage (
 endmodule
 ```
 
-### Top-Level: Pipeline Processor
+### Pipeline Processor
 ```verilog
 module pipeline(
     input clk,
@@ -238,7 +238,7 @@ module pipeline(
 endmodule
 ```
 
-### Simulación: Testbench Integral
+### Testbench
 ```verilog
 module tb_processor();
 
