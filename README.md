@@ -10,6 +10,14 @@ Comprobación del funcionamiento del hardware segmentado y la validación de las
 
 ---
 
+## Flow & Fmax Summary
+
+![Flow Summary](Flow.jpeg)
+
+![Fmax Summary](fmax.jpeg)
+
+---
+
 ## 📄 Código Fuente (Verilog)
 
 A continuación se detalla la implementación en Verilog de cada uno de los módulos que componen la arquitectura del procesador.
@@ -306,4 +314,9 @@ module tb_processor();
     end
 
 endmodule
+```
+### Restricciones
+```verilog
+create_clock -name clk -period 10.0 [get_ports clk]
+//Pusimos esto porque no aparecia nada en "Clocks" e investigamos dimos con esta solución
 ```
